@@ -53,12 +53,12 @@ function Login() {
               type="email"
               placeholder="Email"
               className={`input ${
-                errors.email && 'border-b-2 border-orange-500'
+                errors.email && 'border-b-2'
               }`}
               {...register('email', { required: true })}
             />
             {errors.email && (
-              <p className="p-1 text-[13px] font-light  text-orange-500">
+              <p className="p-1 text-[13px] font-light">
                 Please enter a valid email.
               </p>
             )}
@@ -69,11 +69,11 @@ function Login() {
               {...register('password', { required: true })}
               placeholder="Password"
               className={`input ${
-                errors.password && 'border-b-2 border-orange-500'
+                errors.password && 'border-b-2 w-full'
               }`}
             />
             {errors.password && (
-              <p className="p-1 text-[13px] font-light  text-orange-500">
+              <p className="p-1 text-[13px] font-light ">
                 Your password must contain between 4 and 60 characters.
               </p>
             )}
@@ -87,14 +87,15 @@ function Login() {
           Sign In
         </button>
         <div className="text-[gray]">
-          New to Netflix?{' '}
-          <button
+          New to Netflix? UnComment For Sign Up
+          {/* <button
             className="cursor-pointer text-white hover:underline"
             onClick={() => setLogin(false)}
+            // onClick={null}
             type="submit"
           >
             Sign up now
-          </button>
+          </button> */}
         </div>
       </form>
     </div>
