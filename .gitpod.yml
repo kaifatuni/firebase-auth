@@ -1,0 +1,4 @@
+before_tasks:
+  - npm install
+
+tasks:
