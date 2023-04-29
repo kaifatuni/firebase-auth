@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp, getApp, getApps } from 'firebase/app';
-import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from 'firebase/firestore'
 import { getAuth } from 'firebase/auth'
 
@@ -15,14 +15,13 @@ const firebaseConfig = {
   projectId: "writer-48fc4",
   storageBucket: "writer-48fc4.appspot.com",
   messagingSenderId: "1013061976536",
-  appId: "1:1013061976536:web:caa80d095aaaeb75d872ad",
-  measurementId: "G-VH7WM608C2"
+  appId: "1:1013061976536:web:caa80d095aaaeb75d872ad"
 };
 
 // Initialize Firebase
 
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp()
-const analytics = getAnalytics(app);
+
 const db = getFirestore()
 const auth = getAuth()
 
